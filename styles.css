@@ -5,25 +5,21 @@ body {
     background-color: #f0f2f5;
 }
 
-.header {
-    background-color: #4a76a8;
-    color: #fff;
-    padding: 10px 15%;
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: flex-start;
 }
 
 .logo {
@@ -57,12 +53,6 @@ body {
     align-items: center;
 }
 
-.left-block {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
 .logo-image {
     width: 100%;
     max-width: 200px;
@@ -85,12 +75,19 @@ body {
 
 .login-container {
     width: 100%;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .login-form {
+    width: 100%;
+    max-width: 300px;
     margin-bottom: 20px;
     background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .login-form input {
@@ -126,12 +123,12 @@ body {
 
 .additional-buttons {
     width: 100%;
+    max-width: 300px;
     margin-top: 20px;
     background-color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -149,4 +146,200 @@ body {
 
 .additional-buttons button:hover {
     background-color: #e0e0e0;
+}
+
+.create-account-button {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+}
+
+.create-account-button:hover {
+    background-color: #45a049 !important;
+}
+
+.create-bisness-account-button {
+    background-color: white !important;
+    color: #4a76a8 !important;
+    padding: 10px 20px !important;
+    border: 1px solid #4a76a8 !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+}
+
+.create-bisness-account-button:hover {
+    background-color: #e0e0e0 !important;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.left-image {
+    max-width: 33%;
+    height: auto;
+}
+
+.right-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: -20px; 
+}
+
+.center {
+    text-align: center;
+}
+
+.download_vk {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 20px auto; 
+}
+
+.download_vk p {
+    margin: 0; 
+    color: #4a76a8;
+    font-weight: bold;
+}
+
+.products {
+    color: #4a76a8;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15%;
+    background-color: #f0f2f5;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.footer-center a {
+    margin: 0 10px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right a {
+    margin: 0 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f2f5;
+    border-radius: 20px; 
+    padding: 5px 10px;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 200px;
+    padding: 5px;
+    color: #333;
+}
+
+.search-bar input[type="text"]:focus {
+    outline: none;
+}
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .left-block, .right-block {
+        width: 100%;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .left-image, .right-image {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .download_vk {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download_vk p {
+        margin: 5px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-center, .footer-right {
+        margin-top: 10px;
+    }
 }
